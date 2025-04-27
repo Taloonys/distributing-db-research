@@ -15,7 +15,8 @@
 * Объединить в общую сеть, все компоненты
 
 ## Main scenario
-* С физического ПК `./scripts/init-cfg-server.sh`
+* Выполнить (с хоста): `docker compose up -d`
+* Выполнить `./scripts/init-cfg-server.sh`
 * Выполнить `./scripts/init-shards.sh`
 * Выполнить `./scripts/router-commit-shards.sh`
 

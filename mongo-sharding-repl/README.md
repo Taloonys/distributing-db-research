@@ -5,6 +5,7 @@
 * git (for .sh scripts running)
 
 ## Main scenario
+* Выполнить (с хоста): `docker compose up -d`
 * С физического ПК `./scripts/init-cfg-server.sh`
 * Выполнить `./scripts/init-shards.sh`
 * Выполнить `./scripts/router-commit-shards.sh`

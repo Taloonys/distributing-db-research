@@ -8,6 +8,7 @@
 * Добавить redis сервис в docker-compose
 * Развернуть его в single-node режиме (пока что)
 * Указать для pymongo_api `REDIS_URL`
+* Выполнить (с хоста): `docker compose up -d`
 * Выполнить (с хоста): `./scripts/start.sh`
 
 ## Test case
@@ -22,7 +23,7 @@ db.helloDoc.countDocuments()
 exit()
 ```
 
-* Проверка, например, первого шарда:
+* Проверка, например, реплики первого шарда:
 ```bash
 docker compose exec -it shard1-repl2 mongosh --port 27019
 use somedb;

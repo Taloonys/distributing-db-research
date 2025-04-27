@@ -1,41 +1,8 @@
-# !!!!!!!!!!!!!!!!!!!!!!
-Схемы тут:
-https://drive.google.com/file/d/1wlgT52MNpYj28IKMg4EFZjuxP-9slo62/view?usp=drive_link
+# General
+Just a research on how to apply "sharding", "replication" & caching on existing mini-project with DB
 
----
-
-# pymongo-api
-
-## Как запустить
-
-Запускаем mongodb и приложение
-
-```shell
-docker compose up -d
-```
-
-Заполняем mongodb данными
-
-```shell
-./scripts/mongo-init.sh
-```
-
-## Как проверить
-
-### Если вы запускаете проект на локальной машине
-
-Откройте в браузере http://localhost:8080
-
-### Если вы запускаете проект на предоставленной виртуальной машине
-
-Узнать белый ip виртуальной машины
-
-```shell
-curl --silent http://ifconfig.me
-```
-
-Откройте в браузере http://<ip виртуальной машины>:8080
-
-## Доступные эндпоинты
-
-Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
+# Reps
+* **mongo** - default
+* **mongo-sharding** - applied *sharding*
+* **mongo-sharding-repl** - applied *replication* for shards
+* **sharding-repl-cache** - applied *redis single-node caching* to `mongo-sharding-repl`
